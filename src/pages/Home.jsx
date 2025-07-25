@@ -1,23 +1,28 @@
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
 import DailyAffirmation from "../components/DailyAffirmation";
+import CommunityStats from "../components/CommunityStats";
+import GetStartedCTA from "../components/GetStartedCTA";
+
 
 
 function Home() {
   return (
     <div>
       <Navbar />
+
+
       <HeroSection />
+
+
+      <GetStartedCTA />
+
 
       <DailyAffirmation />
 
 
-      <section>
-        <h2>Community Stats</h2>
-        {/* Placeholder for now */}
-        <p>Total Cats: ___</p>
-        <p>Journal Posts: ___</p>
-      </section>
+      <CommunityStats />
+
 
       <section>
         <button>Get Started</button>
