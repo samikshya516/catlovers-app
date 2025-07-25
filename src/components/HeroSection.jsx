@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./HeroSection.module.css";
 import catHero from "../assets/cat-hero.jpg";
 
+
 function HeroSection() {
   return (
     <section className={styles.hero}>
@@ -15,3 +16,5 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
+
