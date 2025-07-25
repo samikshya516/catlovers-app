@@ -1,9 +1,8 @@
 import HeroSection from "../components/HeroSection"; 
 import Navbar from "../components/Navbar";
 import DailyAffirmation from "../components/DailyAffirmation";
-
+import CommunityStats from "../components/CommunityStats";
 import GetStartedCTA from "../components/GetStartedCTA";
-
 
 
 function Home() {
@@ -12,8 +11,8 @@ function Home() {
       <Navbar />
       <HeroSection />
       <DailyAffirmation />
-      
-      <GetStartedCTA />
+      <CommunityStats />
+      <GetStartedCTA /> 
     </div>
   );
 }
