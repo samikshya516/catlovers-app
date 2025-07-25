@@ -1,15 +1,16 @@
 import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import DailyAffirmation from "../components/DailyAffirmation";
+
 
 function Home() {
   return (
     <div>
       <Navbar />
+      <HeroSection />
 
-      <section>
-        <h2>Daily Affirmation</h2>
-        {/* Placeholder for now */}
-        <p>“Affirmation will go here”</p>
-      </section>
+      <DailyAffirmation />
+
 
       <section>
         <h2>Community Stats</h2>

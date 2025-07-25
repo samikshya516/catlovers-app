@@ -1,0 +1,32 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8E8FF;
+  padding: 2rem;
+  border-radius: 20px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.heroImage {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.heroText {
+  max-width: 400px;
+  text-align: center;
+}
+
+.heroText h1 {
+  font-size: 2rem;
+  color: #5E3A87;
+}
+
+.heroText p {
+  font-size: 1.1rem;
+  color: #333;
+}
