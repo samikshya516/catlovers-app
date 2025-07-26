@@ -1,0 +1,19 @@
+.affirmation {
+  background-color: #E8F4FF;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.affirmation h2 {
+  font-size: 1.5rem;
+  color: #4B6C8B;
+  margin-bottom: 0.5rem;
+}
+
+.affirmation p {
+  font-size: 1.1rem;
+  color: #333;
+  font-style: italic;
+}
