@@ -1,0 +1,39 @@
+.statsSection {
+  background-color: #FFF0E8;
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.statsSection h2 {
+  color: #D17842;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.statsGrid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.statCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 160px;
+}
+
+.statCard h3 {
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.statCard p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+}
