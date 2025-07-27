@@ -1,0 +1,51 @@
+.moodWidget {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.moodWidget h2 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+}
+
+.moodButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+
+.moodButton {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.moodButton:hover {
+  background-color: #e0e0e0;
+}
+
+.moodButton.selected {
+  background-color: #d1ffd6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ProfileCard from "../components/ProfileCard";
 import styles from './Profile.module.css';
+import MoodTracker from "../components/MoodTracker";
+
 
 function Profile() {
   const [catName, setCatName] = useState("");
@@ -42,7 +44,7 @@ function Profile() {
         <form onSubmit={handleSubmit}>
           {/* Form fields stay the same */}
           <div>
-            <label>Cat Name:</label>
+            <label>Cat's Name:</label>
             <input
               type="text"
               value={catName}
@@ -106,6 +108,7 @@ function Profile() {
         />
       )}
     </div>
+    <MoodTracker />
   </div>
 );
 
