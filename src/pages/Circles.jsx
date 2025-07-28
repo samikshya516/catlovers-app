@@ -2,12 +2,14 @@
 import React from "react";
 import { circles } from "../data/mockDiscussions";
 import { Link } from "react-router-dom";
-
+import Navbar from "../components/Navbar";
 
 
 function Circles() {
   return (
     <div>
+      <Navbar />
+      <div style={{ padding: "1rem", textAlign: "center" }}>
       <h1>Whisker Circles</h1>
       <p>Select a circle to explore discussions.</p>
       <div style={{ display: "grid", gap: "16px", marginTop: "20px" }}>
@@ -32,6 +34,7 @@ function Circles() {
         ))}
       </div>
 
+      </div>
     </div>
   );
 }

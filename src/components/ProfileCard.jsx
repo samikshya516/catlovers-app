@@ -22,6 +22,7 @@ function ProfileCard({ catName, age, breed, photoURL, story, onEdit }) {
       <p><strong>Age:</strong> {age}</p>
       <p><strong>Breed:</strong> {breed}</p>
       <p><strong>Story:</strong> {story}</p>
+
       <button onClick={onEdit} style={{
         marginTop: "1rem",
         padding: "0.5rem 1rem",
@@ -32,6 +33,9 @@ function ProfileCard({ catName, age, breed, photoURL, story, onEdit }) {
       }}>
         Edit Profile
       </button>
+
+      
+
     </div>
   );
 }

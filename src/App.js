@@ -6,6 +6,7 @@ import Profile from './pages/Profile';
 import CircleDetail from './pages/CircleDetail';
 import ThreadPage from './pages/ThreadPage';
 import NewThreadForm from "./pages/NewThreadForm";
+import './styles/design.css';
 
 
  

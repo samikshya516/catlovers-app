@@ -51,8 +51,12 @@ export default function MoodTracker() {
             {mood.emoji}
           </button>
         ))}
+
+      
+
+
         <div style={{ marginTop: "20px" }}>
-          <h3>Your 7 Days Mood History </h3>
+          <h3>Your 7 Day Mood History </h3>
           <div style={{ display: "flex", gap: "8px" }}>
             {getLast7DaysMoods().map((entry, index) => (
               <div

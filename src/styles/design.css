@@ -1,0 +1,33 @@
+:root {
+  /* Font Sizes */
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2rem;
+
+  /* Spacing (based on 8px grid) */
+  --space-xs: 0.5rem;  /* 8px */
+  --space-sm: 1rem;    /* 16px */
+  --space-md: 1.5rem;  /* 24px */
+  --space-lg: 2rem;    /* 32px */
+  --space-xl: 3rem;    /* 48px */
+
+  /* Component Sizes */
+  --btn-height: 44px;
+  --card-width: 300px;
+  --image-radius: 12px;
+
+  /* Pastel Backgrounds */
+  --color-bg-light: #fef6f9;
+  --color-bg-card: #fff7fb;
+
+  /* Accent Colors */
+  --color-accent: #ff8fa3;
+  --color-accent-dark: #e0667c;
+
+  /* Text Colors */
+  --color-text-main: #2b2b2b;
+  --color-text-light: #555;
+}

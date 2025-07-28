@@ -20,7 +20,7 @@ function DailyAffirmation() {
 
   return (
     <section className={styles.affirmation}>
-      <h2>Daily Affirmation</h2>
+      <h2>Daily Affurrmation</h2>
       <p>{affirmation}</p>
       <button className={styles.shareButton} onClick={handleShareClick}>
         Share
