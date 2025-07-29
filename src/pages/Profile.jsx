@@ -44,62 +44,78 @@ function Profile() {
         <h1>Create Cat Profile</h1>
         <div className={styles.formContainer}>
           {!isSubmitted ? (
-            <form onSubmit={handleSubmit}>
-              {/* Form fields stay the same */}
-              <div>
-                <label>Cat's Name:</label>
-                <input
-                  type="text"
-                  value={catName}
-                  onChange={(e) => setCatName(e.target.value)}
-                  maxLength={20}
-                />
-                <p>{catName.length}/20 characters</p>
-                {formErrors.catName && <p style={{ color: "red" }}>{formErrors.catName}</p>}
-              </div>
+            <React.Fragment>
+              <form onSubmit={handleSubmit}>
+                {/* Form fields stay the same */}
+                <div>
+                  <label>Cat's Name:</label>
+                  <input
+                    type="text"
+                    value={catName}
+                    onChange={(e) => setCatName(e.target.value)}
+                    maxLength={20}
+                  />
+                  <p>{catName.length}/20 characters</p>
+                  {formErrors.catName && <p style={{ color: "red" }}>{formErrors.catName}</p>}
+                </div>
 
-              <div>
-                <label>Age:</label>
-                <input
-                  type="number"
-                  value={age}
-                  onChange={(e) => setAge(e.target.value)}
-                />
-                {formErrors.age && <p style={{ color: "red" }}>{formErrors.age}</p>}
-              </div>
+                <div>
+                  <label>Age:</label>
+                  <input
+                    type="number"
+                    value={age}
+                    onChange={(e) => setAge(e.target.value)}
+                  />
+                  {formErrors.age && <p style={{ color: "red" }}>{formErrors.age}</p>}
+                </div>
 
-              <div>
-                <label>Breed:</label>
-                <input
-                  type="text"
-                  value={breed}
-                  onChange={(e) => setBreed(e.target.value)}
-                />
-                {formErrors.breed && <p style={{ color: "red" }}>{formErrors.breed}</p>}
-              </div>
-              
-              <div>
-                <label>Photo URL:</label>
-                <input
-                  type="url"
-                  value={photoURL}
-                  onChange={(e) => setPhotoURL(e.target.value)}
-                />
-              </div>
+                <div>
+                  <label>Breed:</label>
+                  <input
+                    type="text"
+                    value={breed}
+                    onChange={(e) => setBreed(e.target.value)}
+                  />
+                  {formErrors.breed && <p style={{ color: "red" }}>{formErrors.breed}</p>}
+                </div>
+                
+                <div>
+                  <label>Photo URL:</label>
+                  <input
+                    type="url"
+                    value={photoURL}
+                    onChange={(e) => setPhotoURL(e.target.value)}
+                  />
+                </div>
 
-              <div>
-                <label>Cat’s Story:</label>
-                <textarea
-                  value={story}
-                  onChange={(e) => setStory(e.target.value)}
-                  maxLength={300}
-                />
-                <p>{story.length}/300 characters</p>
-                {formErrors.story && <p style={{ color: "red" }}>{formErrors.story}</p>}
-              </div>
+                <div>
+                  <label>Cat’s Story:</label>
+                  <textarea
+                    value={story}
+                    onChange={(e) => setStory(e.target.value)}
+                    maxLength={300}
+                  />
+                  <p>{story.length}/300 characters</p>
+                  {formErrors.story && <p style={{ color: "red" }}>{formErrors.story}</p>}
+                </div>
 
-              <button type="submit">Save Profile</button>
-            </form>
+                <button
+                  type="submit"
+                  style={{
+                    backgroundColor: "var(--color-accent)",
+                    color: "white",
+                    padding: "var(--space-sm)",
+                    borderRadius: "8px",
+                    fontSize: "var(--font-base)",
+                    height: "var(--btn-height)",
+                    border: "none",
+                    cursor: "pointer"
+                  }}
+                >
+                  Save Profile
+                </button>
+              </form>
+            </React.Fragment>
           ) : (
             <ProfileCard
               catName={catName}
